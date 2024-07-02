@@ -12,14 +12,16 @@
       <div class="col">
         <div class="instructions">
           <h2>Instructions</h2>
-          <p>Enter the PUZZLE with digits 1 to 9</p>
+          <p>Enter numbers 1-9 in the boxes below to solve the sudoku.</p>
           <p>Click the "Solve" button to get the answers.</p>
-          <p>Click the "backspace" to clear an input.</p>
+          <p>Click the "Reset" button to clear the sudoku.</p>
+          <p>Click the "Backspace" to clear an input.</p>
         </div>
       </div>
       <div class="col">
         <div id="sudoku-grid"></div>
         <button onclick="solveSudoku()">Solve</button>
+        <button onclick="resetSudoku()">Reset</button>
         <p id="message"></p>
       </div>
       <div class="col">
@@ -29,6 +31,7 @@
         </div>
       </div>
     </div>
+
     <script src="solver.js"></script>
   </body>
 </html>
