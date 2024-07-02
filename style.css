@@ -7,7 +7,7 @@ body {
   padding: 0;
   height: 100vh;
   justify-content: center;
-  background-color: #000000;
+  background-color: #ffffff;
 }
 
 h1 {
@@ -32,15 +32,15 @@ h1 {
 
 #sudoku-grid {
   display: grid;
-  grid-template-columns: repeat(9, 50px);
-  grid-template-rows: repeat(9, 50px);
+  grid-template-columns: repeat(9, 35px);
+  grid-template-rows: repeat(9, 35px);
   gap: 1px;
   margin-bottom: 20px;
 }
 
 #sudoku-grid input {
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   text-align: center;
   font-size: 20px;
   border: 1px solid #49924b;
@@ -78,8 +78,7 @@ button:hover {
 }
 
 .instructions {
-  margin-top: 20px;
-  margin-left: 40px;
+  margin-left: 0px;
   color: #fff;
   background-color: #333;
   padding: 20px;
@@ -100,12 +99,11 @@ button:hover {
 }
 
 .instructions p:last-child {
-  margin-bottom: 0;
+  margin-bottom: 20;
 }
 
 .col3 {
-  margin-top: 20px;
-  margin-right: 40px;
+  margin-right: 0px;
   color: #fff;
   background-color: #333;
   padding: 20px;
@@ -127,4 +125,12 @@ button:hover {
 
 .col3 p:last-child {
   margin-bottom: 0;
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 1080px) {
+  .row {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }
