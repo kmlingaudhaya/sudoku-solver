@@ -38,75 +38,18 @@ p {
   margin-bottom: 30px;
 }
 
-/* Media query for mobile devices (max-width: 768px) */
-@media only screen and (max-width: 768px) {
-  h2[style="display: none"] {
-    display: block;
-  }
-  header {
-    background-attachment: scroll; /* change background attachment to scroll for mobile */
-    height: 400px; /* set a fixed height for mobile */
-  }
-
-  header .overlay {
-    padding: 20px; /* reduce padding for mobile */
-  }
-
-  h1 {
-    font-size: 40px; /* reduce font size for mobile */
-  }
-
-  h3,
-  p {
-    font-size: 16px; /* reduce font size for mobile */
-  }
+button {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: #000000;
+  background: #fff;
+  margin-bottom: 50px;
+  box-shadow: 0 3px 20px 0 #0000003b;
 }
-
-/* Media query for smaller mobile devices (max-width: 480px) */
-@media only screen and (max-width: 480px) {
-  header {
-    height: 300px; /* set a smaller fixed height for smaller mobile devices */
-  }
-
-  header .overlay {
-    padding: 10px; /* reduce padding even further for smaller mobile devices */
-  }
-
-  h1 {
-    font-size: 30px; /* reduce font size even further for smaller mobile devices */
-  }
-
-  h3,
-  p {
-    font-size: 14px; /* reduce font size even further for smaller mobile devices */
-  }
-}
-
-/* Hide the h2 element by default */
-h2[style="display: none"] {
-  display: none;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  justify-content: center;
-  background-color: #383535;
-}
-
-h1 {
-  color: #45a049;
-  margin-bottom: 20px;
-}
-
-h2,
-p {
-  color: #fff;
+button:hover {
+  cursor: pointer;
 }
 
 .row {
@@ -114,11 +57,6 @@ p {
   width: 100%;
   justify-content: center;
   align-items: center;
-}
-
-.header {
-  margin-bottom: 20px; /* keep this line to center horizontally */
-  margin-top: 20px;
 }
 
 .col {
@@ -158,23 +96,6 @@ p {
   background-color: #918686; /* or any other color you prefer */
   border-radius: 10px;
   padding: 20px;
-}
-
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  margin-bottom: 10px;
-}
-
-button:hover {
-  background-color: #45a049;
-  transform: scale(1.05);
 }
 
 #message {
