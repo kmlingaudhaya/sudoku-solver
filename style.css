@@ -40,6 +40,9 @@ p {
 
 /* Media query for mobile devices (max-width: 768px) */
 @media only screen and (max-width: 768px) {
+  h2[style="display: none"] {
+    display: block;
+  }
   header {
     background-attachment: scroll; /* change background attachment to scroll for mobile */
     height: 400px; /* set a fixed height for mobile */
@@ -77,6 +80,11 @@ p {
   p {
     font-size: 14px; /* reduce font size even further for smaller mobile devices */
   }
+}
+
+/* Hide the h2 element by default */
+h2[style="display: none"] {
+  display: none;
 }
 
 body {
