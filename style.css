@@ -1,3 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 900px;
+}
+header {
+  background: url("http://www.autodatz.com/wp-content/uploads/2017/05/Old-Car-Wallpapers-Hd-36-with-Old-Car-Wallpapers-Hd.jpg");
+  text-align: center;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 0 85% 85% / 30%;
+}
+header .overlay {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  color: #fff;
+  text-shadow: 1px 1px 1px #333;
+  background-image: linear-gradient(135deg, #9f05ff69 10%, #fd5e086b 100%);
+}
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 80px;
+  margin-bottom: 30px;
+}
+
+h3,
+p {
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 30px;
+}
+
+/* Media query for mobile devices (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+  header {
+    background-attachment: scroll; /* change background attachment to scroll for mobile */
+    height: 400px; /* set a fixed height for mobile */
+  }
+
+  header .overlay {
+    padding: 20px; /* reduce padding for mobile */
+  }
+
+  h1 {
+    font-size: 40px; /* reduce font size for mobile */
+  }
+
+  h3,
+  p {
+    font-size: 16px; /* reduce font size for mobile */
+  }
+}
+
+/* Media query for smaller mobile devices (max-width: 480px) */
+@media only screen and (max-width: 480px) {
+  header {
+    height: 300px; /* set a smaller fixed height for smaller mobile devices */
+  }
+
+  header .overlay {
+    padding: 10px; /* reduce padding even further for smaller mobile devices */
+  }
+
+  h1 {
+    font-size: 30px; /* reduce font size even further for smaller mobile devices */
+  }
+
+  h3,
+  p {
+    font-size: 14px; /* reduce font size even further for smaller mobile devices */
+  }
+}
+
 body {
   font-family: Arial, sans-serif;
   display: flex;
@@ -24,6 +105,12 @@ p {
   display: flex;
   width: 100%;
   justify-content: center;
+  align-items: center;
+}
+
+.header {
+  margin-bottom: 20px; /* keep this line to center horizontally */
+  margin-top: 20px;
 }
 
 .col {
@@ -57,6 +144,12 @@ p {
 #sudoku-grid input:hover {
   background-color: #4a7f8c;
   transform: scale(1.05);
+}
+
+.sudoku-col {
+  background-color: #918686; /* or any other color you prefer */
+  border-radius: 10px;
+  padding: 20px;
 }
 
 button {
@@ -93,7 +186,7 @@ button:hover {
 
 @media screen and (max-width: 1080px) {
   .row {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
   }
 

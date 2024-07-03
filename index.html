@@ -7,27 +7,55 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Sudoku Solver</h1>
-    <div class="row">
-      <div class="col">
-        <div class="instructions">
-          <h2>Instructions</h2>
-          <p>Enter numbers 1-9 in the boxes below to solve the sudoku.</p>
-          <p>Click the "Solve" button to get the answers.</p>
-          <p>Click the "Reset" button to clear the sudoku.</p>
-          <p>Click the "Backspace" to clear an input.</p>
+    <div class="container">
+      <!-- the header row -->
+      <div class="row">
+        <header>
+          <div class="overlay">
+            <h1>Solve Sudoku Puzzles with Ease</h1>
+
+            <p
+              style="
+                font-size: 18px;
+                font-weight: bold;
+                color: #e2d6d6;
+                margin-bottom: 20px;
+              "
+            >
+              One advanced algorithm and intuitive interface make it easy to
+              solve even the most challenging Sudoku puzzles. With this tool,
+              you can focus on the fun of solving without getting stuck.
+            </p>
+            <br />
+          </div>
+        </header>
+      </div>
+      <!-- the grid of 9 rows, where the sudoku is placed -->
+      <div class="row">
+        <!-- column 1 where some content is written -->
+        <div class="col">
+          <div class="instructions">
+            <h2>Instructions</h2>
+            <p>Enter numbers 1-9 in the boxes below to solve the sudoku.</p>
+            <p>Click the "Solve" button to get the answers.</p>
+            <p>Click the "Reset" button to clear the sudoku.</p>
+            <p>Click the "Backspace" to clear an input.</p>
+          </div>
         </div>
-      </div>
-      <div class="col">
-        <div id="sudoku-grid"></div>
-        <button onclick="solveSudoku()">Solve</button>
-        <button onclick="resetSudoku()">Reset</button>
-        <p id="message"></p>
-      </div>
-      <div class="col">
-        <div class="col3">
-          <h2>WebSudoku</h2>
-          <p>Solve Sudoku In Seconds</p>
+        <!-- column 2 where the sudoku is placed -->
+        <div class="col sudoku-col">
+          <div id="sudoku-grid"></div>
+          <button onclick="solveSudoku()">Solve</button>
+          <button onclick="resetSudoku()">Reset</button>
+          <p id="message"></p>
+        </div>
+
+        <!-- column 3 where someother content is placed -->
+        <div class="col">
+          <div class="col3">
+            <h2>WebSudoku</h2>
+            <p>Solve Sudoku In Seconds</p>
+          </div>
         </div>
       </div>
     </div>
