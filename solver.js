@@ -82,11 +82,8 @@ function validateInput(event) {
 // Function to reset the Sudoku grid
 function resetSudoku() {
   var sudokuGrid = document.getElementById("sudoku-grid");
-  var cells = sudokuGrid.querySelectorAll("input");
-  cells.forEach((cell) => {
-    cell.value = "";
-    cell.style.backgroundColor = "#889dab";
-  });
+  sudokuGrid.innerHTML = ""; // Clear any existing content
+  initializeSudoku(); // Re-initialize the grid with the default puzzle
   document.getElementById("message").textContent = "";
 }
 
